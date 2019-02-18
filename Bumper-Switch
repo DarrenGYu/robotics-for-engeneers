@@ -1,0 +1,24 @@
+task main()
+{
+while(1==1)
+{
+ motor[rightMotor] = 35;    
+ motor[leftMotor]  = 45;    
+ 
+ 
+if(SensorValue(touchSensor)==1)
+
+
+{
+  motor[rightMotor] = -35;  
+ motor[leftMotor]  = -45;    
+ wait1Msec(1000);
+ 
+ motor[rightMotor] = 0;    
+ motor[leftMotor]  = -45; 
+ wait1Msec(1000);
+ 
+}
+}
+
+}
